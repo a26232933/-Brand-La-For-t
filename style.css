@@ -1,6 +1,6 @@
 @font-face {
     font-family: Naggn;
-    src: url(./font/I.Ngaan.ttf)
+    src: url(./font/SourceHanSerif-Regular.ttf)
   }
   
   * {
@@ -56,7 +56,7 @@
     /* 背景大小:填滿 */
     background-position: center;
     /* vh螢幕高度 100=100% */
-    height: 150vh;
+    height: 100vh;
     width:100%;
     display: grid;
     color: white;
@@ -70,14 +70,24 @@
     margin: 0 auto;
   }
   
-  #banner div h1,
+  #banner>div .img {
+    background-image: url(./img/blogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 200px;
+    width: 170px;
+  }
+
+  #banner div p,
   #banner div h4 {
     font-family: Naggn;
-    color: blanchedalmond;
+    color: rgba(250, 114, 114, 0.8);
   }
   
-  #banner div h1 {
+  #banner div p {
     font-size: 120px;
+    text-align: right;
   }
   
   #banner div h4 {
@@ -87,7 +97,7 @@
   
   section {
     width: 1200px;
-    margin: 0 auto;
+    margin: auto auto;
   }
   
   #about>div {
